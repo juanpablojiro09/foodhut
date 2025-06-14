@@ -4,9 +4,9 @@ pipeline {
     stages {
         stage('Analizar con SonarQube') {
             steps {
-                withSonarQubeEnv('SonnarLocal') {
-                    bat 'sonar-scanner.bat'
-                }
+                withSonarQubeEnv('SonarLocal') {
+                    bat "sonar-scanner"
+                  }
             }
         }
 
